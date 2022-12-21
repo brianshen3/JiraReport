@@ -1,0 +1,51 @@
+{
+  "message": "Request failed with status code 400",
+  "name": "AxiosError",
+  "stack": "AxiosError: Request failed with status code 400\n    at settle (/Users/brianshen/Documents/JiraReport/node_modules/axios/dist/node/axios.cjs:1855:12)\n    at IncomingMessage.handleStreamEnd (/Users/brianshen/Documents/JiraReport/node_modules/axios/dist/node/axios.cjs:2712:11)\n    at IncomingMessage.emit (events.js:326:22)\n    at endReadableNT (_stream_readable.js:1241:12)\n    at processTicksAndRejections (internal/process/task_queues.js:84:21)",
+  "config": {
+    "transitional": {
+      "silentJSONParsing": true,
+      "forcedJSONParsing": true,
+      "clarifyTimeoutError": false
+    },
+    "adapter": [
+      "xhr",
+      "http"
+    ],
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1,
+    "env": {
+      "Blob": null
+    },
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+      "Accept-Encoding": "identity",
+      "Authorization": "Basic YnJpYW4uc2hlbkBwaXhsZWV0dXJudG8uY29tOmFUOVhad3BzSWRSUHBjN3Y2OXptRDc5OQ==",
+      "User-Agent": "axios/1.2.1"
+    },
+    "params": {
+      "jql": "project in (MAINT, IMP) AND issuetype in (Bug, Task) ORDER BY created DESC",
+      "startAt": 0,
+      "maxResults": 100,
+      "fields": [
+        "summary",
+        "status",
+        "created"
+      ]
+    },
+    "method": "get",
+    "url": "https://pixlee.atlassian.net/rest/api/2/search"
+  },
+  "code": "ERR_BAD_REQUEST",
+  "status": 400
+}
