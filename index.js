@@ -21,7 +21,7 @@ async function makeRequest() {
 
     // Set up the request parameters
     const params = {
-      jql: '', // leave this empty to retrieve all tickets
+      jql: 'project IN (MAINT, IMP) AND issuetype IN (Bug, Task) ORDER BY created DESC', // leave this empty to retrieve all tickets
       startAt: 0,
       maxResults: 100,
       // You can add additional fields to the fields parameter to specify which fields you want to include in the response

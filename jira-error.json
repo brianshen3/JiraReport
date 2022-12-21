@@ -34,7 +34,7 @@
       "User-Agent": "axios/1.2.1"
     },
     "params": {
-      "jql": "project in (MAINT, IMP) AND issuetype in (Bug, Task) ORDER BY created DESC",
+      "jql": "project IN (MAINT, IMP) AND issuetype IN (Bug, Task) ORDER BY created DESC",
       "startAt": 0,
       "maxResults": 100,
       "fields": [
